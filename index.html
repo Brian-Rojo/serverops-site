@@ -2,13 +2,14 @@
 <html lang="es">
 
 <head>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>ServerOps Flow | Automatización y Landing Pages</title>
-  <meta name="description" content="Automatización de procesos, bots, sistemas Linux y landing pages para negocios que quieren ahorrar tiempo y conseguir clientes." />
+  <title>ServerOps Flow</title>
 
   <link rel="stylesheet" href="style.css" />
+
 </head>
 
 <body>
@@ -16,80 +17,166 @@
   <div class="bg-grid"></div>
   <div class="bg-glow"></div>
 
+  <!-- NAVBAR -->
+
   <nav>
+
     <div class="nav-container">
 
-      <div class="logo">
-        <h1>ServerOps Flow</h1>
-        <p>Automation • Landing Pages • Systems</p>
+      <div class="logo-wrap">
+
+        <img
+          src="images/logo.png"
+          alt="ServerOps Flow"
+          class="logo-img"
+        />
+
+        <div class="logo-text">
+          <h1>ServerOps Flow</h1>
+          <p>Automation • Systems • Landing Pages</p>
+        </div>
+
       </div>
 
       <div class="nav-links">
         <a href="#services">Servicios</a>
-        <a href="#landing">Landing Pages</a>
-        <a href="#stack">Stack</a>
+        <a href="#solutions">Soluciones</a>
+        <a href="#stack">Tecnologías</a>
         <a href="#contact">Contacto</a>
       </div>
 
     </div>
+
   </nav>
 
   <!-- HERO -->
+
   <section class="hero">
 
     <div class="container">
 
       <div class="hero-grid">
 
+        <!-- LEFT -->
+
         <div>
 
           <div class="badge">
-            Automatización + Landing Pages para negocios reales
+            ⚙️ Automatización • APIs • Bots • Sistemas internos
           </div>
 
           <h2>
-            Sistemas que trabajan por tu negocio.
+            Software y automatización para
+            <span>negocios reales.</span>
           </h2>
 
           <p class="subtitle">
-            Automatizo tareas, creo bots, y desarrollo landing pages que convierten visitas en clientes.
+
+            Desarrollo landing pages modernas, automatización de tareas,
+            bots, APIs y sistemas internos para negocios que quieren
+            ahorrar tiempo y mejorar sus operaciones.
+
           </p>
+
+          <div class="hero-points">
+
+            <div>✔ Automatización de procesos</div>
+
+            <div>✔ Landing pages profesionales</div>
+
+            <div>✔ APIs y backend</div>
+
+            <div>✔ Bots y notificaciones</div>
+
+            <div>✔ Sistemas internos</div>
+
+            <div>✔ Infraestructura Linux</div>
+
+          </div>
 
           <div class="buttons">
 
-            <a href="https://t.me/ServerOpsFlow" class="btn btn-primary" target="_blank">
-              Contactar
+            <a
+              href="https://t.me/ServerOpsFlow"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              Telegram
             </a>
 
-            <a href="#landing" class="btn btn-secondary">
-              Ver Landing Pages
+            <a
+              href="https://www.facebook.com/profile.php?id=61589026187418"
+              target="_blank"
+              class="btn btn-secondary"
+            >
+              Facebook
             </a>
 
           </div>
 
         </div>
 
+        <!-- RIGHT -->
+
         <div>
 
           <div class="terminal">
 
             <div class="terminal-top">
+
               <div class="dot red"></div>
               <div class="dot yellow"></div>
               <div class="dot green"></div>
+
             </div>
 
             <div class="terminal-content">
 
-              <p><span class="cyan">serverops</span>:~$ system status</p>
-              <p class="green-text">✔ Automatización activa</p>
-              <p class="green-text">✔ Landing pages desplegadas</p>
-              <p class="green-text">✔ Bots funcionando</p>
+              <p>
+                <span class="cyan">root@serverops</span>:~$ docker ps
+              </p>
+
+              <p>
+                CONTAINER ID &nbsp;&nbsp; IMAGE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; STATUS
+              </p>
+
+              <p>
+                9c4ad11a &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; automation-api &nbsp;&nbsp; Up 5 days
+              </p>
+
+              <p>
+                f71bc9dd &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; telegram-bot &nbsp;&nbsp;&nbsp;&nbsp; Up 3 days
+              </p>
+
+              <p>
+                88f31adc &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; nginx-server &nbsp;&nbsp;&nbsp;&nbsp; Up 12 days
+              </p>
+
+              <p>
+                21af89bc &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; monitoring-core &nbsp; Up 8 days
+              </p>
 
               <br>
 
-              <p><span class="cyan">serverops</span>:~$ revenue</p>
-              <p>waiting for first clients...</p>
+              <p>
+                <span class="cyan">root@serverops</span>:~$ python monitor.py
+              </p>
+
+              <p class="green-text">
+                ✔ Sistema iniciado correctamente
+              </p>
+
+              <p class="green-text">
+                ✔ API online en puerto 5000
+              </p>
+
+              <p class="green-text">
+                ✔ Bot conectado a Telegram
+              </p>
+
+              <p class="green-text">
+                ✔ Logs monitoreados en tiempo real
+              </p>
 
             </div>
 
@@ -104,35 +191,69 @@
   </section>
 
   <!-- SERVICES -->
+
   <section class="services" id="services">
 
     <div class="container">
 
       <div class="section-title">
 
-        <h2>Servicios principales</h2>
-        <p>Soluciones simples para ahorrar tiempo y automatizar trabajo.</p>
+        <h2>Servicios</h2>
+
+        <p>
+          Soluciones modernas para automatización, software y presencia digital.
+        </p>
 
       </div>
 
       <div class="services-grid">
 
         <div class="card">
-          <div class="icon">🤖</div>
+
+          <div class="icon">🌐</div>
+
+          <h3>Landing Pages</h3>
+
+          <p>
+            Páginas modernas, rápidas y optimizadas para convertir visitas en clientes.
+          </p>
+
+        </div>
+
+        <div class="card">
+
+          <div class="icon">⚙️</div>
+
           <h3>Automatización</h3>
-          <p>Reportes, tareas repetitivas y procesos que funcionan solos.</p>
+
+          <p>
+            Automatización de tareas repetitivas para reducir tiempo y trabajo manual.
+          </p>
+
         </div>
 
         <div class="card">
-          <div class="icon">📡</div>
-          <h3>Bots</h3>
-          <p>Bots de Telegram para alertas, datos y control de sistemas.</p>
+
+          <div class="icon">🤖</div>
+
+          <h3>Bots & APIs</h3>
+
+          <p>
+            Bots de Telegram, APIs y sistemas conectados para procesos automáticos.
+          </p>
+
         </div>
 
         <div class="card">
-          <div class="icon">⚡</div>
-          <h3>Backend Systems</h3>
-          <p>Scripts, APIs y servicios ligeros en Linux y Docker.</p>
+
+          <div class="icon">💻</div>
+
+          <h3>Sistemas Internos</h3>
+
+          <p>
+            Herramientas y paneles personalizados para organizar operaciones y datos.
+          </p>
+
         </div>
 
       </div>
@@ -141,36 +262,54 @@
 
   </section>
 
-  <!-- LANDINGS -->
-  <section class="landing" id="landing">
+  <!-- SOLUTIONS -->
+
+  <section class="solutions" id="solutions">
 
     <div class="container">
 
       <div class="section-title">
 
-        <h2>Landing Pages para negocios</h2>
-        <p>Páginas simples, rápidas y enfocadas en conseguir clientes.</p>
+        <h2>¿Qué puedo desarrollar?</h2>
+
+        <p>
+          Software moderno enfocado en necesidades reales de negocios.
+        </p>
 
       </div>
 
-      <div class="services-grid">
+      <div class="solutions-grid">
 
-        <div class="card">
-          <div class="icon">🚀</div>
-          <h3>Landing de ventas</h3>
-          <p>Página optimizada para convertir visitas en clientes.</p>
+        <div class="solution-box">
+          ✔ Dashboards administrativos
         </div>
 
-        <div class="card">
-          <div class="icon">💼</div>
-          <h3>Landing profesional</h3>
-          <p>Ideal para freelancers, servicios y negocios locales.</p>
+        <div class="solution-box">
+          ✔ Sistemas de monitoreo
         </div>
 
-        <div class="card">
-          <div class="icon">🔗</div>
-          <h3>Integración</h3>
-          <p>Formularios + Telegram + automatización de leads.</p>
+        <div class="solution-box">
+          ✔ Automatización de procesos
+        </div>
+
+        <div class="solution-box">
+          ✔ APIs backend
+        </div>
+
+        <div class="solution-box">
+          ✔ Bots de Telegram
+        </div>
+
+        <div class="solution-box">
+          ✔ Herramientas internas
+        </div>
+
+        <div class="solution-box">
+          ✔ Integraciones entre plataformas
+        </div>
+
+        <div class="solution-box">
+          ✔ Landing pages empresariales
         </div>
 
       </div>
@@ -180,24 +319,42 @@
   </section>
 
   <!-- STACK -->
+
   <section class="stack" id="stack">
 
     <div class="container">
 
       <div class="section-title">
 
-        <h2>Stack</h2>
-        <p>Herramientas que uso para construir sistemas reales.</p>
+        <h2>Tecnologías</h2>
+
+        <p>
+          Herramientas modernas para automatización e infraestructura.
+        </p>
 
       </div>
 
       <div class="stack-grid">
 
-        <div class="stack-item">Linux</div>
-        <div class="stack-item">Docker</div>
         <div class="stack-item">Python</div>
-        <div class="stack-item">APIs</div>
+
+        <div class="stack-item">Linux</div>
+
+        <div class="stack-item">Docker</div>
+
+        <div class="stack-item">REST APIs</div>
+
+        <div class="stack-item">HTML/CSS/JS</div>
+
         <div class="stack-item">Telegram Bots</div>
+
+        <div class="stack-item">Backend Systems</div>
+
+        <div class="stack-item">Automation Scripts</div>
+
+        <div class="stack-item">Server Monitoring</div>
+
+        <div class="stack-item">Infrastructure</div>
 
       </div>
 
@@ -206,22 +363,37 @@
   </section>
 
   <!-- CTA -->
+
   <section class="cta" id="contact">
 
     <div class="container">
 
       <div class="cta-box">
 
-        <h2>Haz que tu negocio trabaje solo.</h2>
+        <h2>
+          Todo proceso repetitivo puede automatizarse.
+        </h2>
 
         <p>
-          Automatización + landing pages para empezar a generar clientes sin perder tiempo.
+          Sistemas modernos, automatización y herramientas digitales para negocios.
         </p>
 
         <div class="buttons">
 
-          <a href="https://t.me/ServerOpsFlow" class="btn btn-primary" target="_blank">
-            Empezar ahora
+          <a
+            href="https://t.me/ServerOpsFlow"
+            target="_blank"
+            class="btn btn-primary"
+          >
+            Contactar por Telegram
+          </a>
+
+          <a
+            href="https://www.facebook.com/profile.php?id=61589026187418"
+            target="_blank"
+            class="btn btn-secondary"
+          >
+            Facebook
           </a>
 
         </div>
@@ -232,9 +404,13 @@
 
   </section>
 
+  <!-- FOOTER -->
+
   <footer>
 
-    <p>ServerOps Flow • Automation • Landing Pages • Linux Systems</p>
+    <p>
+      ServerOps Flow • Automation • Systems • Linux Infrastructure
+    </p>
 
   </footer>
 
