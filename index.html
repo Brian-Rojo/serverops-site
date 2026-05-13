@@ -3,21 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="description" content="ServerOps Flow: Automatización, APIs, bots de Telegram, landing pages y sistemas internos para negocios. Desarrollo backend y Linux." />
-  <meta name="keywords" content="automatización, bots de telegram, desarrollo backend, landing pages, linux, docker, apis" />
+
+  <meta
+    name="description"
+    content="ServerOps Flow: infraestructura, automatización, sistemas self-hosted, APIs, observabilidad, monitoreo y software operativo para negocios."
+  />
+
+  <meta
+    name="keywords"
+    content="rust, linux, docker, automation, observability, infrastructure, backend, self-hosted, monitoring, telegram bots, fastapi"
+  />
+
   <meta name="author" content="ServerOps Flow" />
-  <meta property="og:title" content="ServerOps Flow - Automatización para negocios reales" />
-  <meta property="og:description" content="Landing pages, bots de Telegram, APIs y sistemas internos. Automatiza tu negocio." />
+
+  <meta property="og:title" content="ServerOps Flow - Automation & Infrastructure Systems" />
+
+  <meta
+    property="og:description"
+    content="Software operativo, automatización avanzada, APIs, observabilidad e infraestructura moderna para negocios."
+  />
+
   <meta property="og:type" content="website" />
   <meta property="og:image" content="images/logo.png" />
+
   <meta name="twitter:card" content="summary_large_image" />
-  <title>ServerOps Flow | Automatización · APIs · Bots · Landing Pages</title>
+
+  <title>
+    ServerOps Flow | Infrastructure · Automation · Backend Systems
+  </title>
+
   <link rel="icon" type="image/png" href="images/logo.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap"
+    rel="stylesheet"
+  />
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <div class="bg-grid"></div>
@@ -25,153 +52,536 @@
   <div class="particles"></div>
 
   <nav>
+
     <div class="container nav-container">
+
       <div class="logo-wrap">
-        <img src="images/logo.png" alt="ServerOps Flow" class="logo-img" loading="lazy" />
+
+        <img
+          src="images/logo.png"
+          alt="ServerOps Flow"
+          class="logo-img"
+          loading="lazy"
+        />
+
         <div class="logo-text">
           <h1>ServerOps Flow</h1>
-          <p>Automation · Systems · Landing Pages</p>
+          <p>Infrastructure · Automation · Systems</p>
         </div>
+
       </div>
+
       <div class="nav-links">
         <a href="#services">Servicios</a>
         <a href="#solutions">Soluciones</a>
         <a href="#stack">Tecnologías</a>
         <a href="#contact">Contacto</a>
       </div>
+
       <button class="menu-toggle" aria-label="Menú" aria-expanded="false">
-        <span></span><span></span><span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
+
     </div>
+
     <div class="mobile-menu" aria-hidden="true">
       <a href="#services">Servicios</a>
       <a href="#solutions">Soluciones</a>
       <a href="#stack">Tecnologías</a>
       <a href="#contact">Contacto</a>
     </div>
+
   </nav>
 
   <main>
+
+    <!-- HERO -->
     <section class="hero">
+
       <div class="container hero-grid">
+
         <div>
-          <div class="badge">⚙️ Automatización · APIs · Bots · Linux</div>
-          <h2>Software y automatización para <span>negocios reales.</span></h2>
-          <p class="subtitle">Desarrollo landing pages modernas, automatización de tareas, APIs, bots de Telegram y sistemas internos para negocios.</p>
+
+          <div class="badge">
+            ⚙️ Infrastructure · Automation · Linux · Rust
+          </div>
+
+          <h2>
+            Software operativo e infraestructura para
+            <span>negocios reales.</span>
+          </h2>
+
+          <p class="subtitle">
+            Desarrollo software operativo, automatización avanzada,
+            sistemas self-hosted, APIs, monitoreo e infraestructura moderna
+            para negocios y plataformas online.
+          </p>
+
           <div class="hero-points">
             <div>✔ Automatización de procesos</div>
-            <div>✔ Bots de Telegram</div>
+            <div>✔ Sistemas self-hosted</div>
             <div>✔ APIs backend</div>
-            <div>✔ Landing pages</div>
+            <div>✔ Monitoring & observability</div>
             <div>✔ Linux & Docker</div>
-            <div>✔ Sistemas internos</div>
+            <div>✔ Software operativo</div>
           </div>
+
           <div class="buttons">
-            <a href="https://t.me/ServerOpsFlow" target="_blank" class="btn btn-primary">Telegram</a>
+
+            <a
+              href="https://t.me/ServerOpsFlow"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              Telegram
+            </a>
+
           </div>
+
         </div>
+
         <div>
+
           <div class="terminal">
+
             <div class="terminal-top">
               <div class="dot red"></div>
               <div class="dot yellow"></div>
               <div class="dot green"></div>
             </div>
+
             <div class="terminal-content">
-              <p><span class="cyan">root@serverops</span>:~$ docker ps</p>
-              <p>CONTAINER ID &nbsp; IMAGE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; STATUS</p>
-              <p>a91c2d11 &nbsp;&nbsp; automation-api &nbsp;&nbsp; Up 4 days</p>
-              <p>7abf11d9 &nbsp;&nbsp; telegram-bot &nbsp;&nbsp;&nbsp;&nbsp; Up 3 days</p>
-              <p>8ffbc123 &nbsp;&nbsp; nginx-server &nbsp;&nbsp;&nbsp;&nbsp; Up 12 days</p>
+
+              <p>
+                <span class="cyan">root@serverops</span>:~$
+                docker ps
+              </p>
+
+              <p>
+                CONTAINER ID &nbsp; IMAGE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; STATUS
+              </p>
+
+              <p>
+                a91c2d11 &nbsp;&nbsp; monitoring-agent &nbsp;&nbsp; Up 8 days
+              </p>
+
+              <p>
+                7abf11d9 &nbsp;&nbsp; automation-engine &nbsp; Up 5 days
+              </p>
+
+              <p>
+                8ffbc123 &nbsp;&nbsp; rust-api-gateway &nbsp;&nbsp; Up 12 days
+              </p>
+
               <br />
-              <p><span class="cyan">root@serverops</span>:~$ python app.py</p>
-              <p class="green-text">✔ API online correctamente</p>
-              <p class="green-text">✔ Sistema monitoreando servicios</p>
-              <p class="green-text">✔ Bot conectado a Telegram</p>
+
+              <p>
+                <span class="cyan">root@serverops</span>:~$
+                cargo run --release
+              </p>
+
+              <p class="green-text">
+                ✔ Monitoring agent online
+              </p>
+
+              <p class="green-text">
+                ✔ Infrastructure healthy
+              </p>
+
+              <p class="green-text">
+                ✔ Automation engine running
+              </p>
+
               <div class="typing-box"></div>
+
             </div>
+
           </div>
+
         </div>
+
       </div>
+
     </section>
 
+    <!-- SERVICIOS -->
     <section id="services">
+
       <div class="container">
+
         <div class="section-title">
+
           <h2>Servicios</h2>
-          <p>Soluciones modernas enfocadas en automatización, infraestructura y desarrollo web.</p>
+
+          <p>
+            Soluciones enfocadas en automatización,
+            infraestructura, observabilidad y sistemas backend.
+          </p>
+
         </div>
+
         <div class="services-grid">
-          <div class="card"><div class="icon">🌐</div><h3>Landing Pages</h3><p>Páginas modernas optimizadas para captar clientes.</p></div>
-          <div class="card"><div class="icon">⚙️</div><h3>Automatización</h3><p>Automatización de tareas repetitivas y procesos.</p></div>
-          <div class="card"><div class="icon">🤖</div><h3>Bots & APIs</h3><p>APIs y bots conectados a Telegram y servicios online.</p></div>
-          <div class="card"><div class="icon">💻</div><h3>Sistemas Internos</h3><p>Herramientas internas y paneles personalizados.</p></div>
-        </div>
-      </div>
-    </section>
 
-    <section id="solutions">
-      <div class="container">
-        <div class="section-title"><h2>¿Qué puedo desarrollar?</h2></div>
-        <div class="solutions-grid">
-          <div class="solution-box">✔ APIs backend</div>
-          <div class="solution-box">✔ Dashboards administrativos</div>
-          <div class="solution-box">✔ Bots de Telegram</div>
-          <div class="solution-box">✔ Sistemas de monitoreo</div>
-          <div class="solution-box">✔ Automatización de tareas</div>
-          <div class="solution-box">✔ Integraciones entre plataformas</div>
-        </div>
-      </div>
-    </section>
+          <div class="card">
 
-    <section id="stack">
-      <div class="container">
-        <div class="section-title"><h2>Tecnologías</h2></div>
-        <div class="stack-grid">
-          <div class="stack-item">Python</div><div class="stack-item">Linux</div><div class="stack-item">Docker</div>
-          <div class="stack-item">REST APIs</div><div class="stack-item">Automation</div><div class="stack-item">Telegram Bots</div>
-          <div class="stack-item">Backend</div><div class="stack-item">HTML/CSS/JS</div>
-        </div>
-      </div>
-    </section>
+            <div class="icon">⚙️</div>
 
-    <section id="contact">
-      <div class="container">
-        <div class="cta-box">
-          <h2>Todo proceso repetitivo puede automatizarse.</h2>
-          <p>Sistemas modernos, landing pages, bots y automatización para negocios.</p>
-          <div class="buttons">
-            <a href="https://t.me/ServerOpsFlow" target="_blank" class="btn btn-primary">Telegram</a>
+            <h3>Automation Systems</h3>
+
+            <p>
+              Automatización de procesos, workflows,
+              integraciones y operaciones repetitivas.
+            </p>
+
           </div>
+
+          <div class="card">
+
+            <div class="icon">📡</div>
+
+            <h3>Monitoring & Observability</h3>
+
+            <p>
+              Sistemas de monitoreo, alertas,
+              métricas y observabilidad en tiempo real.
+            </p>
+
+          </div>
+
+          <div class="card">
+
+            <div class="icon">🦀</div>
+
+            <h3>Rust Infrastructure</h3>
+
+            <p>
+              Agentes persistentes, tooling de infraestructura
+              y software operativo en Rust.
+            </p>
+
+          </div>
+
+          <div class="card">
+
+            <div class="icon">💻</div>
+
+            <h3>Backend Systems</h3>
+
+            <p>
+              APIs, dashboards internos,
+              sistemas operativos empresariales y tooling privado.
+            </p>
+
+          </div>
+
         </div>
-        <!-- Formulario de contacto mejorado -->
-        <div class="contact-form-wrapper">
-          <h3>Cuéntame tu proyecto</h3>
-          <form id="contactForm" class="contact-form">
-            <input type="text" name="name" placeholder="Tu nombre" required aria-label="Nombre">
-            <input type="email" name="email" placeholder="Tu correo electrónico" required aria-label="Correo electrónico">
-            <textarea name="message" rows="4" placeholder="¿En qué puedo ayudarte?" required aria-label="Mensaje"></textarea>
-            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
-            <p class="form-feedback" aria-live="polite"></p>
-          </form>
-        </div>
+
       </div>
+
     </section>
+
+    <!-- INFRA -->
+    <section id="infra">
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <h2>
+            Infraestructura & Sistemas Operativos para Negocios
+          </h2>
+
+          <p>
+            Desarrollo herramientas internas,
+            sistemas self-hosted y software operativo
+            enfocado en automatización,
+            monitoreo e infraestructura moderna.
+          </p>
+
+        </div>
+
+        <div class="services-grid">
+
+          <div class="card">
+
+            <div class="icon">🦀</div>
+
+            <h3>Agentes en Rust</h3>
+
+            <p>
+              Procesos persistentes para monitoreo,
+              automatización, observabilidad y
+              ejecución de tareas críticas.
+            </p>
+
+          </div>
+
+          <div class="card">
+
+            <div class="icon">📡</div>
+
+            <h3>Monitoring Systems</h3>
+
+            <p>
+              Sistemas de monitoreo de servidores,
+              Docker, APIs y servicios
+              con alertas automáticas.
+            </p>
+
+          </div>
+
+          <div class="card">
+
+            <div class="icon">⚡</div>
+
+            <h3>Automation Engines</h3>
+
+            <p>
+              Motores de automatización para ejecutar workflows,
+              tareas programadas e integraciones.
+            </p>
+
+          </div>
+
+          <div class="card">
+
+            <div class="icon">🔒</div>
+
+            <h3>Self-Hosted Infrastructure</h3>
+
+            <p>
+              Infraestructura privada basada en Linux y Docker
+              para negocios que necesitan autonomía.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SOLUCIONES -->
+    <section id="solutions">
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <h2>Soluciones que puedo desarrollar</h2>
+
+          <p>
+            Software operativo, automatización avanzada
+            e infraestructura moderna para negocios.
+          </p>
+
+        </div>
+
+        <div class="solutions-grid">
+
+          <div class="solution-box">
+            ✔ Sistemas internos empresariales
+          </div>
+
+          <div class="solution-box">
+            ✔ APIs backend de alto rendimiento
+          </div>
+
+          <div class="solution-box">
+            ✔ Agentes persistentes en Rust
+          </div>
+
+          <div class="solution-box">
+            ✔ Dashboards de monitoreo
+          </div>
+
+          <div class="solution-box">
+            ✔ Automatización de infraestructura
+          </div>
+
+          <div class="solution-box">
+            ✔ Sistemas de observabilidad
+          </div>
+
+          <div class="solution-box">
+            ✔ Integraciones y orchestration
+          </div>
+
+          <div class="solution-box">
+            ✔ Alertas y monitoring en tiempo real
+          </div>
+
+          <div class="solution-box">
+            ✔ Bots conectados a APIs y sistemas internos
+          </div>
+
+          <div class="solution-box">
+            ✔ Herramientas CLI para operaciones
+          </div>
+
+          <div class="solution-box">
+            ✔ Infraestructura self-hosted
+          </div>
+
+          <div class="solution-box">
+            ✔ Software Linux + Docker
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- STACK -->
+    <section id="stack">
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <h2>Stack Tecnológico</h2>
+
+          <p>
+            Tecnologías enfocadas en automatización,
+            infraestructura e ingeniería de sistemas.
+          </p>
+
+        </div>
+
+        <div class="stack-grid">
+
+          <div class="stack-item">Rust</div>
+          <div class="stack-item">C</div>
+          <div class="stack-item">Python</div>
+          <div class="stack-item">Linux</div>
+          <div class="stack-item">Docker</div>
+          <div class="stack-item">FastAPI</div>
+          <div class="stack-item">REST APIs</div>
+          <div class="stack-item">Automation</div>
+          <div class="stack-item">Observability</div>
+          <div class="stack-item">Monitoring</div>
+          <div class="stack-item">Telegram Bots</div>
+          <div class="stack-item">Infrastructure</div>
+          <div class="stack-item">Self-Hosted</div>
+          <div class="stack-item">Backend Systems</div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+
+      <div class="container">
+
+        <div class="cta-box">
+
+          <h2>
+            Automatización, infraestructura y software operativo.
+          </h2>
+
+          <p>
+            Sistemas modernos, observabilidad,
+            automatización e infraestructura backend.
+          </p>
+
+          <div class="buttons">
+
+            <a
+              href="https://t.me/ServerOpsFlow"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              Telegram
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- TERMINALES DINÁMICAS -->
+        <div class="terminal-showcase">
+
+          <!-- TERMINAL 1 -->
+          <div class="terminal-card">
+
+            <div class="terminal-top">
+              <div class="dot red"></div>
+              <div class="dot yellow"></div>
+              <div class="dot green"></div>
+            </div>
+
+            <div
+              class="terminal-content dynamic-terminal"
+              id="terminalOne"
+            ></div>
+
+          </div>
+
+          <!-- TERMINAL 2 -->
+          <div class="terminal-card">
+
+            <div class="terminal-top">
+              <div class="dot red"></div>
+              <div class="dot yellow"></div>
+              <div class="dot green"></div>
+            </div>
+
+            <div
+              class="terminal-content dynamic-terminal"
+              id="terminalTwo"
+            ></div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
   </main>
 
-  <button class="back-to-top" aria-label="Volver arriba">↑</button>
+  <button class="back-to-top" aria-label="Volver arriba">
+    ↑
+  </button>
 
   <footer>
+
     <div class="footer-content">
-      <p>ServerOps Flow • Automation • Systems • Linux Infrastructure</p>
+
+      <p>
+        ServerOps Flow • Infrastructure & Automation Systems
+      </p>
+
       <div class="footer-links">
-        <a href="mailto:serveropsflow@gmail.com">contacto@serveropsflow.com</a>
-        <a href="https://t.me/ServerOpsFlow" target="_blank">Telegram</a>
+
+        <a
+          href="https://t.me/ServerOpsFlow"
+          target="_blank"
+        >
+          Telegram
+        </a>
+
       </div>
-      <p class="footer-copyright">© <span id="currentYear"></span> ServerOps Flow. Todos los derechos reservados.</p>
+
+      <p class="footer-copyright">
+        © <span id="currentYear"></span>
+        ServerOps Flow.
+        Todos los derechos reservados.
+      </p>
+
     </div>
+
   </footer>
 
   <script src="script.js" defer></script>
+
 </body>
 </html>
