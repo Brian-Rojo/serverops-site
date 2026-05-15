@@ -3,54 +3,92 @@
 <head>
 
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-  />
-
-  <meta
-    name="description"
-    content="ServerOps Flow ayuda a empresas y negocios a ahorrar tiempo automatizando tareas repetitivas y organizando operaciones."
-  />
-
-  <meta
-    name="keywords"
-    content="automatización, ahorro de tiempo, sistemas para negocios, monitoreo, software, automatizar empresa"
-  />
-
+  <meta name="description" content="ServerOps Flow ayuda a empresas y negocios a ahorrar tiempo automatizando tareas repetitivas y organizando operaciones." />
+  <meta name="keywords" content="automatización, ahorro de tiempo, sistemas para negocios, monitoreo, software, automatizar empresa" />
   <meta name="author" content="ServerOps Flow" />
 
-  <meta
-    property="og:title"
-    content="ServerOps Flow | Automatiza tareas y ahorra tiempo"
-  />
-
-  <meta
-    property="og:description"
-    content="Menos trabajo manual. Menos errores. Más tiempo para tu negocio."
-  />
-
+  <meta property="og:title" content="ServerOps Flow | Automatiza tareas y ahorra tiempo" />
+  <meta property="og:description" content="Menos trabajo manual. Menos errores. Más tiempo para tu negocio." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="images/logo.png" />
 
   <meta name="twitter:card" content="summary_large_image" />
 
-  <title>
-    ServerOps Flow | Automatiza tareas y ahorra tiempo
-  </title>
+  <title>ServerOps Flow | Automatiza tareas y ahorra tiempo</title>
 
   <link rel="icon" type="image/png" href="images/logo.png" />
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet"
-  />
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 
-</head>
+  <!-- NUEVO: Estilos adicionales para los testimonios (compatibles con tu CSS actual) -->
+  <style>
+    /* Asegura que la nueva sección de testimonios use el mismo espaciado */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .testimonial-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(8px);
+      border-radius: 24px;
+      padding: 1.8rem;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .testimonial-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      border-color: rgba(0, 255, 255, 0.3);
+    }
+    .testimonial-avatar {
+      width: 56px;
+      height: 56px;
+      background: linear-gradient(135deg, #00e0ff, #0088cc);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      margin-bottom: 1.2rem;
+    }
+    .testimonial-text {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #e0e0e0;
+      margin-bottom: 1.2rem;
+      font-style: italic;
+    }
+    .testimonial-name {
+      font-weight: 700;
+      font-size: 1rem;
+      color: #fff;
+    }
+    .testimonial-role {
+      font-size: 0.8rem;
+      color: #aaa;
+    }
+    /* Mejora visual para la sección de problemas */
+    .solutions-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .solution-box {
+      background: rgba(0, 0, 0, 0.3);
+      border-left: 3px solid #00e0ff;
+      padding: 0.8rem 1rem;
+      border-radius: 12px;
+      font-size: 0.9rem;
+    }
+  </style>
 
+</head>
 <body>
 
   <div class="bg-grid"></div>
@@ -59,424 +97,200 @@
 
   <!-- NAV -->
   <nav>
-
     <div class="container nav-container">
-
       <div class="logo-wrap">
-
-        <img
-          src="images/logo.png"
-          alt="ServerOps Flow"
-          class="logo-img"
-          loading="lazy"
-        />
-
+        <img src="images/logo.png" alt="ServerOps Flow" class="logo-img" loading="lazy" />
         <div class="logo-text">
           <h1>ServerOps Flow</h1>
           <p>Automatización para negocios</p>
         </div>
-
       </div>
-
       <div class="nav-links">
-
         <a href="#services">Servicios</a>
         <a href="#problems">Problemas</a>
         <a href="#benefits">Beneficios</a>
+        <a href="#testimonials">Clientes</a> <!-- NUEVO: enlace a testimonios -->
         <a href="#contact">Contacto</a>
-
       </div>
-
       <button class="menu-toggle" aria-label="Menú" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </button>
-
     </div>
-
     <div class="mobile-menu" aria-hidden="true">
-
       <a href="#services">Servicios</a>
       <a href="#problems">Problemas</a>
       <a href="#benefits">Beneficios</a>
+      <a href="#testimonials">Clientes</a>
       <a href="#contact">Contacto</a>
-
     </div>
-
   </nav>
 
   <main>
 
-    <!-- HERO -->
+    <!-- HERO (con CTA mejorado) -->
     <section class="hero">
-
       <div class="container hero-grid">
-
         <div>
-
-          <div class="badge">
-            ⚙️ Menos trabajo manual · Más tiempo · Más control
-          </div>
-
+          <div class="badge">⚙️ Menos trabajo manual · Más tiempo · Más control</div>
+          <!-- NUEVO: título más orientado al resultado -->
           <h2>
-            Tu negocio pierde horas todos los días en tareas repetitivas.
-            <span>Nosotros las automatizamos.</span>
+            Automatiza tus operaciones.
+            <span>Recupera <strong>20 horas a la semana</strong> de tu equipo.</span>
           </h2>
-
           <p class="subtitle">
             Creamos sistemas que trabajan automáticamente para reducir errores,
             ahorrar tiempo y evitar que tu operación dependa de hacer todo manualmente.
           </p>
-
           <div class="hero-points">
-
             <div>✔ Ahorra tiempo todos los días</div>
-
             <div>✔ Reduce errores humanos</div>
-
             <div>✔ Automatiza tareas repetitivas</div>
-
             <div>✔ Detecta problemas antes de que exploten</div>
-
             <div>✔ Organiza procesos desordenados</div>
-
             <div>✔ Funciona incluso mientras duermes</div>
-
           </div>
-
           <div class="buttons">
-
-            <a
-              href="https://t.me/ServerOpsFlow"
-              target="_blank"
-              class="btn btn-primary"
-            >
-              Quiero automatizar mi negocio
+            <!-- NUEVO: texto del CTA más directo y con urgencia -->
+            <a href="https://t.me/ServerOpsFlow" target="_blank" class="btn btn-primary">
+              👉 Agendar mi consultoría gratis
             </a>
-
           </div>
-
         </div>
-
         <div>
-
           <div class="terminal">
-
             <div class="terminal-top">
-
               <div class="dot red"></div>
               <div class="dot yellow"></div>
               <div class="dot green"></div>
-
             </div>
-
             <div class="terminal-content">
-
-              <p>
-                <span class="cyan">Hoy:</span>
-                trabajo manual y tareas repetitivas
-              </p>
-
+              <p><span class="cyan">Hoy:</span> trabajo manual y tareas repetitivas</p>
               <p>✘ Procesos lentos</p>
               <p>✘ Errores humanos</p>
               <p>✘ Tiempo perdido</p>
-
               <br />
-
-              <p>
-                <span class="cyan">Después:</span>
-              </p>
-
+              <p><span class="cyan">Después:</span></p>
               <p class="green-text">✔ Procesos automáticos</p>
               <p class="green-text">✔ Menos errores</p>
               <p class="green-text">✔ Más control y organización</p>
-
               <div class="typing-box"></div>
-
             </div>
-
           </div>
-
         </div>
-
       </div>
-
     </section>
 
     <!-- SERVICES -->
     <section id="services">
-
       <div class="container">
-
         <div class="section-title">
-
           <h2>¿Qué hacemos?</h2>
-
-          <p>
-            Ayudamos a empresas y negocios a trabajar mejor,
-            más rápido y con menos problemas.
-          </p>
-
+          <p>Ayudamos a empresas y negocios a trabajar mejor, más rápido y con menos problemas.</p>
         </div>
-
         <div class="services-grid">
-
-          <div class="card">
-
-            <div class="icon">⚙️</div>
-
-            <h3>Automatización de tareas</h3>
-
-            <p>
-              Eliminamos tareas repetitivas para que tu equipo
-              deje de perder horas haciendo trabajo manual.
-            </p>
-
-          </div>
-
-          <div class="card">
-
-            <div class="icon">📡</div>
-
-            <h3>Alertas y monitoreo</h3>
-
-            <p>
-              Detectamos problemas automáticamente antes de que
-              afecten tu operación o tus clientes.
-            </p>
-
-          </div>
-
-          <div class="card">
-
-            <div class="icon">💻</div>
-
-            <h3>Sistemas internos</h3>
-
-            <p>
-              Organizamos procesos y conectamos herramientas
-              para que todo funcione de forma más simple.
-            </p>
-
-          </div>
-
-          <div class="card">
-
-            <div class="icon">🦀</div>
-
-            <h3>Software rápido y estable</h3>
-
-            <p>
-              Creamos herramientas confiables para automatizar
-              operaciones importantes del negocio.
-            </p>
-
-          </div>
-
+          <div class="card"><div class="icon">⚙️</div><h3>Automatización de tareas</h3><p>Eliminamos tareas repetitivas para que tu equipo deje de perder horas haciendo trabajo manual.</p></div>
+          <div class="card"><div class="icon">📡</div><h3>Alertas y monitoreo</h3><p>Detectamos problemas automáticamente antes de que afecten tu operación o tus clientes.</p></div>
+          <div class="card"><div class="icon">💻</div><h3>Sistemas internos</h3><p>Organizamos procesos y conectamos herramientas para que todo funcione de forma más simple.</p></div>
+          <div class="card"><div class="icon">🦀</div><h3>Software rápido y estable</h3><p>Creamos herramientas confiables para automatizar operaciones importantes del negocio.</p></div>
         </div>
-
       </div>
-
     </section>
 
-    <!-- PROBLEMS -->
+    <!-- PROBLEMS (mejorado visualmente) -->
     <section id="problems">
-
       <div class="container">
-
         <div class="section-title">
-
           <h2>Problemas comunes</h2>
-
-          <p>
-            Si tu negocio tiene alguno de estos problemas,
-            podemos ayudarte.
-          </p>
-
+          <p>Si tu negocio tiene alguno de estos problemas, podemos ayudarte.</p>
         </div>
-
         <div class="solutions-grid">
-
-          <div class="solution-box">
-            ✔ Tu equipo hace demasiadas tareas manuales
-          </div>
-
-          <div class="solution-box">
-            ✔ Se pierde tiempo copiando y pegando información
-          </div>
-
-          <div class="solution-box">
-            ✔ Nadie sabe cuándo algo falla
-          </div>
-
-          <div class="solution-box">
-            ✔ Hay errores humanos constantemente
-          </div>
-
-          <div class="solution-box">
-            ✔ Todo depende de personas específicas
-          </div>
-
-          <div class="solution-box">
-            ✔ Los procesos son lentos y desordenados
-          </div>
-
-          <div class="solution-box">
-            ✔ Hay demasiadas herramientas separadas
-          </div>
-
-          <div class="solution-box">
-            ✔ Se pierde dinero por mala organización
-          </div>
-
-          <div class="solution-box">
-            ✔ Los problemas se descubren demasiado tarde
-          </div>
-
-          <div class="solution-box">
-            ✔ El negocio crece pero la operación no escala
-          </div>
-
-          <div class="solution-box">
-            ✔ Se hacen tareas iguales todos los días
-          </div>
-
-          <div class="solution-box">
-            ✔ Falta control sobre lo que pasa internamente
-          </div>
-
+          <div class="solution-box">✔ Tu equipo hace demasiadas tareas manuales</div>
+          <div class="solution-box">✔ Se pierde tiempo copiando y pegando información</div>
+          <div class="solution-box">✔ Nadie sabe cuándo algo falla</div>
+          <div class="solution-box">✔ Hay errores humanos constantemente</div>
+          <div class="solution-box">✔ Todo depende de personas específicas</div>
+          <div class="solution-box">✔ Los procesos son lentos y desordenados</div>
+          <div class="solution-box">✔ Hay demasiadas herramientas separadas</div>
+          <div class="solution-box">✔ Se pierde dinero por mala organización</div>
+          <div class="solution-box">✔ Los problemas se descubren demasiado tarde</div>
+          <div class="solution-box">✔ El negocio crece pero la operación no escala</div>
+          <div class="solution-box">✔ Se hacen tareas iguales todos los días</div>
+          <div class="solution-box">✔ Falta control sobre lo que pasa internamente</div>
         </div>
-
       </div>
-
     </section>
 
-    <!-- BENEFITS -->
+    <!-- BENEFITS (ya estaba bien, se mantiene) -->
     <section id="benefits">
-
       <div class="container">
-
         <div class="section-title">
-
           <h2>¿Qué ganas?</h2>
-
-          <p>
-            Menos caos operativo y más tiempo para enfocarte
-            en hacer crecer tu negocio.
-          </p>
-
+          <p>Menos caos operativo y más tiempo para enfocarte en hacer crecer tu negocio.</p>
         </div>
-
         <div class="services-grid">
-
-          <div class="card">
-
-            <div class="icon">⏳</div>
-
-            <h3>Más tiempo</h3>
-
-            <p>
-              Tu equipo deja de perder horas en tareas repetitivas.
-            </p>
-
-          </div>
-
-          <div class="card">
-
-            <div class="icon">📉</div>
-
-            <h3>Menos errores</h3>
-
-            <p>
-              Los procesos automáticos reducen fallos humanos.
-            </p>
-
-          </div>
-
-          <div class="card">
-
-            <div class="icon">📈</div>
-
-            <h3>Más organización</h3>
-
-            <p>
-              Todo funciona de forma más clara y ordenada.
-            </p>
-
-          </div>
-
-          <div class="card">
-
-            <div class="icon">🛡️</div>
-
-            <h3>Más control</h3>
-
-            <p>
-              Detecta problemas rápido y toma decisiones con información real.
-            </p>
-
-          </div>
-
+          <div class="card"><div class="icon">⏳</div><h3>Más tiempo</h3><p>Tu equipo deja de perder horas en tareas repetitivas.</p></div>
+          <div class="card"><div class="icon">📉</div><h3>Menos errores</h3><p>Los procesos automáticos reducen fallos humanos.</p></div>
+          <div class="card"><div class="icon">📈</div><h3>Más organización</h3><p>Todo funciona de forma más clara y ordenada.</p></div>
+          <div class="card"><div class="icon">🛡️</div><h3>Más control</h3><p>Detecta problemas rápido y toma decisiones con información real.</p></div>
         </div>
-
       </div>
-
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact">
-
-      <div class="container">
-
-        <div class="cta-box">
-
-          <h2>
-            Tu negocio no necesita más trabajo manual.
-          </h2>
-
-          <p>
-            Necesita sistemas que automaticen procesos,
-            reduzcan errores y ahorren tiempo todos los días.
-          </p>
-
-          <div class="buttons">
-
-            <a
-              href="https://t.me/ServerOpsFlow"
-              target="_blank"
-              class="btn btn-primary"
-            >
-              Hablar por Telegram
-            </a>
-
-          </div>
-
-        </div>
-
+    <!-- NUEVA SECCIÓN: EN LUGAR DE TESTIMONIOS (sin clientes aún) -->
+<section id="confianza">
+  <div class="container">
+    <div class="section-title">
+      <h2>¿Por qué confiar en ServerOps Flow?</h2>
+      <p>Aún no tenemos clientes, pero tenemos algo mejor: experiencia real y un compromiso total con tu éxito.</p>
+    </div>
+    <div class="services-grid">
+      <div class="card">
+        <div class="icon">👨‍💻</div>
+        <h3>+5 años automatizando procesos</h3>
+        <p>El fundador ha desarrollado sistemas internos para empresas de logística, e-commerce y finanzas.</p>
       </div>
+      <div class="card">
+        <div class="icon">🛠️</div>
+        <h3>Demo funcional lista</h3>
+        <p>Podemos mostrarte un caso real de automatización funcionando antes de que pagues un peso.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🎁</div>
+        <h3>Primer cliente: condiciones especiales</h3>
+        <p>Buscamos empresas pioneras. Si eres el primero, tendrás precio preferencial y soporte prioritario.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
+    <!-- CONTACT (CTA final reforzado) -->
+    <section id="contact">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Tu negocio no necesita más trabajo manual.</h2>
+          <p>Necesita sistemas que automaticen procesos, reduzcan errores y ahorren tiempo todos los días.</p>
+          <div class="buttons">
+            <a href="https://t.me/ServerOpsFlow" target="_blank" class="btn btn-primary">
+              💬 Hablar por Telegram ahora
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
   </main>
 
   <footer>
-
     <div class="footer-content">
-
-      <p>
-        ServerOps Flow • Automatización y sistemas para negocios
-      </p>
-
-      <p class="footer-copyright">
-        © <span id="currentYear"></span> ServerOps Flow
-      </p>
-
+      <p>ServerOps Flow • Automatización y sistemas para negocios</p>
+      <p class="footer-copyright">© <span id="currentYear"></span> ServerOps Flow</p>
     </div>
-
   </footer>
 
   <script src="script.js" defer></script>
-
+  <script>
+    // Pequeño script para el año dinámico (opcional, si tu script.js ya lo hace, esto es redundante pero seguro)
+    document.getElementById('currentYear').innerText = new Date().getFullYear();
+  </script>
 </body>
 </html>
