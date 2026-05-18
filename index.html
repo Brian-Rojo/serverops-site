@@ -99,6 +99,16 @@
             display: flex;
             align-items: center;
         }
+        .hero-content {
+            max-width: 800px;
+        }
+        .book-logo {
+            max-width: 280px;
+            margin-bottom: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 20px 35px -12px rgba(0,0,0,0.6);
+            border: 0.5px solid rgba(0,195,255,0.3);
+        }
         .hero-main-phrase {
             font-size: 3.8rem;
             font-weight: 600;
@@ -220,6 +230,7 @@
             .price-block { padding: 2rem; }
             .current-price { font-size: 2.2rem; }
             .timer-block { font-size: 1.2rem; padding: 0.8rem 1.2rem; }
+            .book-logo { max-width: 200px; }
         }
     </style>
 </head>
@@ -243,9 +254,10 @@
 </nav>
 
 <main>
-    <!-- HERO con urgencia y contador -->
+    <!-- HERO con logo del libro -->
     <section id="archive" class="hero">
-        <div class="container">
+        <div class="container hero-content">
+            <img class="book-logo fade-up" src="images/logo.png" alt="Portada ARCHIVE_02 - El error en la memoria humana" onerror="this.src='https://placehold.co/600x800/0a0a0a/00C3FF?text=NEON+COLLAPSE%0AARCHIVE+02'">
             <div class="hero-main-phrase fade-up">ARCHIVE_02:<br>EL ERROR EN LA MEMORIA HUMANA</div>
             <div class="hero-sub fade-up">51 páginas de datos residuales. Lo que una inteligencia artificial intentó borrar — y no lo consiguió del todo. <strong>Edición limitada de acceso temprano.</strong></div>
             
