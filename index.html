@@ -34,7 +34,6 @@
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="#inicio" aria-label="ServerOps Flow — inicio">
-      <!-- AQUÍ VA TU LOGO -->
       <img src="logo.png" alt="ServerOps Flow Logo" class="brand-logo">
     </a>
 
@@ -311,14 +310,29 @@
         <h2 id="contacto-title">¿Tenés un problema que podría resolverse con software?</h2>
         <p>Contanos qué necesitás y evaluamos una solución.</p>
 
+        <!-- BOTÓN PRINCIPAL DE TELEGRAM -->
+        <a class="btn-telegram" href="https://t.me/serveropsflow?text=Hola%2C%20vi%20su%20web%20y%20quiero%20consultar%20por%20un%20proyecto." target="_blank" rel="noopener noreferrer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.26-1.91.178-.184 3.247-2.977 3.307-3.23.007-.03.014-.14-.05-.198-.065-.058-.16-.038-.23-.022-.098.022-1.66 1.055-4.688 3.096-.443.305-.844.454-1.202.446-.395-.008-1.157-.223-1.723-.407-.693-.226-1.245-.345-1.197-.727.026-.199.297-.402.813-.61 3.18-1.385 5.3-2.298 6.36-2.74 3.03-1.26 3.66-1.478 4.07-1.486z"/>
+          </svg>
+          Escribime por Telegram
+        </a>
+        <p class="telegram-handle">@serveropsflow</p>
+
+        <!-- Separador -->
+        <div class="contact-divider" aria-hidden="true">
+          <span>o completá el formulario</span>
+        </div>
+
         <div class="contact-meta" aria-hidden="true">
           <span>// respuesta a consultas técnicas y presupuestos</span>
           <span>// sin intermediarios</span>
         </div>
       </div>
 
-      <!-- IMPORTANTE: reemplazar action="#" por el endpoint real -->
-      <form id="contact-form" action="#" method="post" novalidate>
+      <!-- FORMULARIO -->
+      <!-- Reemplazá TU_ENDPOINT_DE_FORMSPREE_AQUI con tu URL real de Formspree -->
+      <form id="contact-form" action="TU_ENDPOINT_DE_FORMSPREE_AQUI" method="POST">
         <div class="field">
           <label for="nombre">Nombre</label>
           <input type="text" id="nombre" name="nombre" autocomplete="name" placeholder="Tu nombre" required>
@@ -339,6 +353,8 @@
           <textarea id="mensaje" name="mensaje" placeholder="Describí el proceso, la tarea o la herramienta que tenés en mente." required></textarea>
         </div>
 
+        <input type="hidden" name="_subject" value="Nueva consulta desde ServerOps Flow">
+
         <button class="btn btn-primary form-submit" type="submit">Enviar consulta</button>
         <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
         <p class="form-note">Usamos tus datos únicamente para responder esta consulta.</p>
@@ -356,7 +372,6 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a class="brand" href="#inicio" aria-label="ServerOps Flow — inicio">
-          <!-- AQUÍ VA TU LOGO (versión footer) -->
           <img src="logo.png" alt="ServerOps Flow Logo" class="brand-logo" style="height: 36px;">
         </a>
         <p>Software simple. Automatización real.</p>
@@ -373,13 +388,13 @@
 
         <div class="footer-col">
           <h4>Contacto</h4>
-          <a href="#contacto">Formulario de consulta</a>
-          <a href="mailto:hola@serveropsflow.com">hola@serveropsflow.com</a>
+          <a href="https://t.me/serveropsflow" target="_blank" rel="noopener noreferrer">Telegram: @serveropsflow</a>
+          <a href="mailto:serveropsflow@gmail.com">serveropsflow@gmail.com</a>
         </div>
 
         <div class="footer-col">
           <h4>Redes</h4>
-          <a href="#" rel="noopener">Telegram</a>
+          <a href="https://t.me/serveropsflow" target="_blank" rel="noopener noreferrer">Telegram</a>
           <a href="#" rel="noopener">GitHub</a>
           <a href="#" rel="noopener">LinkedIn</a>
         </div>
@@ -404,6 +419,15 @@
   "description": "Desarrollo de software, automatizaciones y herramientas digitales simples, livianas y funcionales para negocios, profesionales y proyectos digitales.",
   "url": "https://serveropsflow.com/",
   "slogan": "Software simple. Automatización real.",
+  "sameAs": [
+    "https://t.me/serveropsflow"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "url": "https://t.me/serveropsflow",
+    "email": "serveropsflow@gmail.com"
+  },
   "knowsAbout": [
     "Automatización de tareas",
     "Bots de Telegram",
