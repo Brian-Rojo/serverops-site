@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <title>Kernix Tecnología — Tecnología útil</title>
+  <meta name="description" content="Tecnología útil para tu día a día. Comprá online en Kernix Tecnología.">
+  <meta name="theme-color" content="#0b0d10">
+
+  <meta property="og:title" content="Kernix Tecnología">
+  <meta property="og:description" content="Tecnología útil para tu día a día.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    :root {
+      --bg: #f5f6f8;
+      --surface: #ffffff;
+      --surface-soft: #eef0f3;
+      --ink: #0d1015;
+      --muted: #68707c;
+      --line: #e2e5e9;
+      --accent: #315cff;
+      --accent-hover: #2449dc;
+      --accent-soft: #e9edff;
+      --success: #16834b;
+      --dark: #0b0d10;
+      --dark-2: #15181d;
+      --radius: 20px;
+      --shadow: 0 16px 45px rgba(13, 16, 21, .08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Inter", system-ui, sans-serif;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    h1,
+    h2,
+    h3,
+    .brand,
+    .price {
+      font-family: "Space Grotesk", system-ui, sans-serif;
+    }
+
+    .container {
+      width: min(100% - 32px, 1080px);
+      margin: 0 auto;
+    }
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(245, 246, 248, .88);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(226, 229, 233, .8);
+    }
+
+    .nav {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: -.04em;
+      text-decoration: none;
+    }
+
+    .brand span {
+      color: var(--accent);
+    }
+
+    .nav-link {
+      font-size: .82rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--muted);
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      padding: 34px 0 20px;
+    }
+
+    .hero-grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .hero-copy {
+      padding: 10px 0;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 7px 11px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: .74rem;
+      font-weight: 700;
+      letter-spacing: .02em;
+      margin-bottom: 16px;
+    }
+
+    .eyebrow-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .hero h1 {
+      margin: 0;
+      max-width: 720px;
+      font-size: clamp(2.15rem, 9vw, 4.5rem);
+      line-height: .98;
+      letter-spacing: -.065em;
+      font-weight: 700;
+    }
+
+    .hero h1 .accent {
+      color: var(--accent);
+    }
+
+    .hero-description {
+      max-width: 590px;
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.65;
+    }
+
+    .hero-actions {
+      margin-top: 24px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .btn {
+      min-height: 52px;
+      padding: 14px 20px;
+      border: 0;
+      border-radius: 14px;
+      background: var(--accent);
+      color: white;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      text-decoration: none;
+      font-size: .95rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform .15s ease, background .15s ease;
+    }
+
+    .btn:hover {
+      background: var(--accent-hover);
+    }
+
+    .btn:active {
+      transform: scale(.985);
+    }
+
+    .btn-secondary {
+      background: var(--surface);
+      color: var(--ink);
+      border: 1px solid var(--line);
+    }
+
+    .btn-secondary:hover {
+      background: var(--surface-soft);
+    }
+
+    .hero-note {
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: .75rem;
+      text-align: center;
+    }
+
+    /* =========================
+       PRODUCT VISUAL
+    ========================= */
+
+    .product-card {
+      position: relative;
+      min-height: 340px;
+      border-radius: 26px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 50% 25%, rgba(49, 92, 255, .18), transparent 42%),
+        linear-gradient(145deg, #11151b, #080a0d);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 25px 70px rgba(10, 13, 18, .18);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 100%;
+      max-height: 500px;
+      object-fit: contain;
+      padding: 30px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .product-placeholder {
+      width: 150px;
+      height: 150px;
+      border-radius: 32px;
+      background: linear-gradient(145deg, #30353d, #171a1f);
+      border: 1px solid rgba(255,255,255,.12);
+      box-shadow: 0 30px 60px rgba(0,0,0,.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #d9dde4;
+      font-size: 3rem;
+      transform: rotate(-8deg);
+    }
+
+    .product-label {
+      position: absolute;
+      left: 18px;
+      bottom: 18px;
+      z-index: 3;
+      padding: 8px 11px;
+      border-radius: 10px;
+      background: rgba(255,255,255,.09);
+      border: 1px solid rgba(255,255,255,.12);
+      color: rgba(255,255,255,.8);
+      backdrop-filter: blur(12px);
+      font-size: .72rem;
+    }
+
+    /* =========================
+       TRUST BAR
+    ========================= */
+
+    .trust-bar {
+      margin: 14px 0 0;
+      padding: 15px;
+      border-radius: 16px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .trust-mini {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: .75rem;
+      font-weight: 600;
+    }
+
+    .trust-mini-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--surface-soft);
+    }
+
+    /* =========================
+       SECTIONS
+    ========================= */
+
+    section {
+      padding: 72px 0;
+    }
+
+    .section-kicker {
+      margin-bottom: 8px;
+      color: var(--accent);
+      font-size: .72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+    }
+
+    section h2 {
+      margin: 0;
+      max-width: 720px;
+      font-size: clamp(1.75rem, 6vw, 3rem);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+    }
+
+    .section-lead {
+      max-width: 620px;
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: .96rem;
+    }
+
+    /* =========================
+       PROBLEM / SOLUTION
+    ========================= */
+
+    .problem-grid {
+      display: grid;
+      gap: 12px;
+      margin-top: 26px;
+    }
+
+    .problem-card {
+      padding: 22px;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: var(--surface);
+    }
+
+    .problem-card.solution {
+      background: var(--dark);
+      border-color: var(--dark);
+      color: white;
+    }
+
+    .problem-number {
+      font-family: "Space Grotesk";
+      font-size: .75rem;
+      font-weight: 700;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .solution .problem-number {
+      color: #8e97a5;
+    }
+
+    .problem-card h3 {
+      margin: 0 0 8px;
+      font-size: 1.05rem;
+    }
+
+    .problem-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .solution p {
+      color: #aeb5c0;
+    }
+
+    /* =========================
+       DEMO
+    ========================= */
+
+    .demo {
+      margin-top: 26px;
+      border-radius: 24px;
+      overflow: hidden;
+      background: var(--dark);
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .demo img,
+    .demo video {
+      width: 100%;
+      max-height: 600px;
+      object-fit: cover;
+    }
+
+    .demo-placeholder {
+      color: #8f97a3;
+      text-align: center;
+      padding: 40px;
+      font-size: .85rem;
+    }
+
+    /* =========================
+       BENEFITS
+    ========================= */
+
+    .benefits {
+      margin-top: 26px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .benefit {
+      display: flex;
+      gap: 13px;
+      align-items: flex-start;
+      padding: 17px;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      background: var(--surface);
+    }
+
+    .check {
+      width: 23px;
+      height: 23px;
+      flex: 0 0 23px;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .75rem;
+      font-weight: 800;
+    }
+
+    .benefit strong {
+      display: block;
+      font-size: .9rem;
+    }
+
+    .benefit span {
+      display: block;
+      margin-top: 2px;
+      color: var(--muted);
+      font-size: .78rem;
+    }
+
+    /* =========================
+       BUY
+    ========================= */
+
+    .buy-section {
+      padding-top: 30px;
+    }
+
+    .buy-card {
+      margin-top: 26px;
+      padding: 25px;
+      border-radius: 24px;
+      background: var(--dark);
+      color: white;
+      box-shadow: 0 25px 65px rgba(11,13,16,.17);
+    }
+
+    .buy-product-name {
+      color: #aeb5c0;
+      font-size: .82rem;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: clamp(2.5rem, 11vw, 4rem);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -.06em;
+    }
+
+    .old-price {
+      display: inline-block;
+      margin-left: 8px;
+      color: #777f8a;
+      font-size: .95rem;
+      text-decoration: line-through;
+    }
+
+    .buy-note {
+      margin: 10px 0 22px;
+      color: #9ca4af;
+      font-size: .78rem;
+    }
+
+    .buy-card .btn {
+      width: 100%;
+      background: white;
+      color: var(--dark);
+    }
+
+    .buy-card .btn:hover {
+      background: #edf0f4;
+    }
+
+    .payment-note {
+      margin-top: 13px;
+      text-align: center;
+      color: #7f8792;
+      font-size: .7rem;
+    }
+
+    /* =========================
+       FAQ
+    ========================= */
+
+    .faq {
+      margin-top: 22px;
+      border-top: 1px solid var(--line);
+    }
+
+    details {
+      border-bottom: 1px solid var(--line);
+    }
+
+    summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 19px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      font-size: .9rem;
+      font-weight: 600;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      content: "+";
+      color: var(--muted);
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+
+    details[open] summary::after {
+      content: "−";
+    }
+
+    details p {
+      margin: -4px 0 18px;
+      max-width: 680px;
+      color: var(--muted);
+      font-size: .84rem;
+    }
+
+    /* =========================
+       FINAL CTA
+    ========================= */
+
+    .final-cta {
+      padding: 70px 22px;
+      border-radius: 26px;
+      background: var(--accent);
+      color: white;
+      text-align: center;
+    }
+
+    .final-cta h2 {
+      margin: 0 auto;
+      max-width: 650px;
+    }
+
+    .final-cta p {
+      max-width: 500px;
+      margin: 14px auto 22px;
+      color: rgba(255,255,255,.78);
+    }
+
+    .final-cta .btn {
+      width: auto;
+      min-width: 190px;
+      background: white;
+      color: var(--ink);
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      padding: 50px 0 120px;
+    }
+
+    .footer-brand {
+      font-family: "Space Grotesk";
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    footer p {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-size: .78rem;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px 16px;
+    }
+
+    .footer-links a {
+      color: var(--muted);
+      font-size: .74rem;
+      text-decoration: none;
+    }
+
+    /* =========================
+       MOBILE CTA
+    ========================= */
+
+    .mobile-buy {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 90;
+      padding: 9px 12px calc(9px + env(safe-area-inset-bottom));
+      background: rgba(255,255,255,.94);
+      border-top: 1px solid var(--line);
+      backdrop-filter: blur(16px);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .mobile-price {
+      padding-left: 4px;
+      font-family: "Space Grotesk";
+      font-size: .95rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .mobile-buy .btn {
+      flex: 1;
+      min-height: 46px;
+    }
+
+    /* =========================
+       DESKTOP
+    ========================= */
+
+    @media (min-width: 760px) {
+
+      .container {
+        width: min(100% - 64px, 1080px);
+      }
+
+      .nav-link {
+        display: block;
+      }
+
+      .hero {
+        padding: 72px 0 30px;
+      }
+
+      .hero-grid {
+        grid-template-columns: .9fr 1.1fr;
+        align-items: center;
+        gap: 60px;
+      }
+
+      .hero-actions {
+        display: flex;
+        align-items: center;
+      }
+
+      .hero-actions .btn {
+        width: auto;
+        min-width: 180px;
+      }
+
+      .hero-note {
+        justify-content: flex-start;
+      }
+
+      .product-card {
+        min-height: 520px;
+      }
+
+      .trust-bar {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .problem-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .benefits {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .mobile-buy {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="#" class="brand">
+      Kernix <span>Tecnología</span>
+    </a>
+
+    <a href="#comprar" class="nav-link">
+      Ver producto →
+    </a>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+
+  <section class="hero">
+    <div class="container hero-grid">
+
+      <div class="hero-copy">
+
+        <div class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          Tecnología útil
+        </div>
+
+        <h1 id="hero-title">
+          Más posibilidades.
+          <span class="accent">Menos cables.</span>
+        </h1>
+
+        <p class="hero-description" id="hero-description">
+          Una solución simple para conectar tus dispositivos y aprovechar mejor tu espacio.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#comprar" class="btn">
+            Comprar ahora
+            <span>→</span>
+          </a>
+
+          <a href="#producto" class="btn btn-secondary">
+            Ver cómo funciona
+          </a>
+        </div>
+
+        <div class="hero-note">
+          <span>✓</span>
+          <span id="hero-shipping-note">Envíos a todo el país</span>
+        </div>
+
+      </div>
+
+      <div>
+        <div class="product-card" id="hero-product">
+          <div class="product-placeholder">⌁</div>
+          <div class="product-label">Producto destacado</div>
+        </div>
+
+        <div class="trust-bar">
+          <div class="trust-mini">
+            <span class="trust-mini-icon">🔒</span>
+            Pago seguro
+          </div>
+
+          <div class="trust-mini">
+            <span class="trust-mini-icon">📦</span>
+            Envíos nacionales
+          </div>
+
+          <div class="trust-mini">
+            <span class="trust-mini-icon">💬</span>
+            Atención directa
+          </div>
+
+          <div class="trust-mini">
+            <span class="trust-mini-icon">↩</span>
+            Compra respaldada
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- PROBLEMA -->
+
+  <section id="problema">
+    <div class="container">
+
+      <div class="section-kicker">El problema</div>
+
+      <h2>
+        Tu setup no debería ser una pelea contra los cables.
+      </h2>
+
+      <p class="section-lead">
+        Cuando necesitás conectar más dispositivos de los que permite tu notebook,
+        terminás usando adaptadores, cables y soluciones improvisadas.
+      </p>
+
+      <div class="problem-grid">
+
+        <div class="problem-card">
+          <div class="problem-number">01 / ANTES</div>
+
+          <h3>Menos puertos. Más problemas.</h3>
+
+          <p>
+            Periféricos, almacenamiento, pantalla y accesorios compitiendo por los
+            mismos puertos.
+          </p>
+        </div>
+
+        <div class="problem-card solution">
+          <div class="problem-number">02 / DESPUÉS</div>
+
+          <h3 id="solution-title">Un solo accesorio.</h3>
+
+          <p id="solution-description">
+            Centralizá tus conexiones y mantené tu espacio más ordenado.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- PRODUCTO EN ACCIÓN -->
+
+  <section id="producto">
+    <div class="container">
+
+      <div class="section-kicker">En acción</div>
+
+      <h2>
+        Menos explicación. Más demostración.
+      </h2>
+
+      <p class="section-lead">
+        Mirá cómo funciona el producto en una situación real.
+      </p>
+
+      <div class="demo" id="product-demo">
+        <div class="demo-placeholder">
+          Agregá acá una foto o video real del producto.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- BENEFICIOS -->
+
+  <section>
+    <div class="container">
+
+      <div class="section-kicker">Por qué usarlo</div>
+
+      <h2>
+        Diseñado para resolver un problema real.
+      </h2>
+
+      <div class="benefits" id="benefits"></div>
+
+    </div>
+  </section>
+
+
+  <!-- COMPRA -->
+
+  <section class="buy-section" id="comprar">
+    <div class="container">
+
+      <div class="section-kicker">Disponible ahora</div>
+
+      <h2 id="buy-title">
+        Llevate el tuyo.
+      </h2>
+
+      <div class="buy-card">
+
+        <div class="buy-product-name" id="buy-product-name">
+          Producto
+        </div>
+
+        <div>
+          <span class="price" id="price">$24.999</span>
+          <span class="old-price" id="old-price"></span>
+        </div>
+
+        <p class="buy-note" id="buy-note">
+          Envíos a todo el país.
+        </p>
+
+        <a href="#" class="btn" id="buy-button">
+          Comprar ahora →
+        </a>
+
+        <div class="payment-note" id="payment-note">
+          Pago seguro mediante Mercado Pago.
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CONFIANZA -->
+
+  <section>
+    <div class="container">
+
+      <div class="section-kicker">Información</div>
+
+      <h2>
+        Lo que necesitás saber antes de comprar.
+      </h2>
+
+      <div class="faq">
+
+        <details>
+          <summary>¿Cuánto tarda el envío?</summary>
+          <p id="faq-shipping-time">
+            Configurar con el tiempo real informado por el proveedor.
+          </p>
+        </details>
+
+        <details>
+          <summary>¿A dónde realizan envíos?</summary>
+          <p id="faq-shipping-zones">
+            Configurar las zonas reales de envío.
+          </p>
+        </details>
+
+        <details>
+          <summary>¿Cómo puedo pagar?</summary>
+          <p id="faq-payment">
+            Configurar los medios de pago disponibles.
+          </p>
+        </details>
+
+        <details>
+          <summary>¿Cómo recibo el seguimiento?</summary>
+          <p id="faq-tracking">
+            Configurar según el sistema de despacho utilizado.
+          </p>
+        </details>
+
+        <details>
+          <summary>¿Qué pasa si recibo el producto con un problema?</summary>
+          <p id="faq-returns">
+            Configurar la política real de cambios y devoluciones antes de publicar.
+          </p>
+        </details>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CTA FINAL -->
+
+  <section>
+    <div class="container">
+
+      <div class="final-cta">
+
+        <h2 id="final-title">
+          Tecnología útil, sin complicaciones.
+        </h2>
+
+        <p>
+          Comprá de forma simple y recibí tu pedido donde estés.
+        </p>
+
+        <a href="#comprar" class="btn">
+          Comprar ahora →
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+  <div class="container">
+
+    <div class="footer-brand">
+      Kernix Tecnología
+    </div>
+
+    <p>
+      Tecnología útil para la vida cotidiana.
+    </p>
+
+    <div class="footer-links">
+      <a href="#">Términos y condiciones</a>
+      <a href="#">Privacidad</a>
+      <a href="#">Cambios y devoluciones</a>
+      <a href="#">Envíos</a>
+      <a href="#" id="footer-whatsapp">WhatsApp</a>
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- CTA MOBILE -->
+
+<div class="mobile-buy">
+
+  <span class="mobile-price" id="mobile-price">
+    $24.999
+  </span>
+
+  <a href="#" class="btn" id="mobile-buy-button">
+    Comprar →
+  </a>
+
+</div>
+
+
+<script>
+
+  /* =====================================================
+     CONFIGURACIÓN
+     Cambiá solamente estos datos para utilizar otro producto.
+  ===================================================== */
+
+  const CONFIG = {
+
+    PRODUCT_NAME: "Hub USB-C 7 en 1",
+
+    PRODUCT_DESCRIPTION:
+      "Convertí un puerto USB-C en una solución práctica para conectar tus dispositivos y mantener tu setup ordenado.",
+
+    PRODUCT_PRICE:
+      "$24.999",
+
+    PRODUCT_OLD_PRICE:
+      null,
+
+    PRODUCT_IMAGE:
+      null,
+
+    PRODUCT_VIDEO:
+      null,
+
+    PRODUCT_URL:
+      "#",
+
+    WHATSAPP_URL:
+      "https://wa.me/5490000000000",
+
+    SHIPPING_INFORMATION:
+      "Envíos a todo el país. Despacho dentro del plazo informado al momento de la compra.",
+
+    PAYMENT_INFORMATION:
+      "Pago mediante Mercado Pago y los medios disponibles en el checkout.",
+
+    SHIPPING_ZONES:
+      "Envíos a todo el territorio habilitado por el operador logístico.",
+
+    TRACKING_INFORMATION:
+      "Recibirás la información de seguimiento cuando el pedido sea despachado.",
+
+    RETURNS_INFORMATION:
+      "Consultar la política de cambios y devoluciones antes de realizar la compra.",
+
+  };
+
+
+  /* =====================================================
+     BENEFICIOS
+  ===================================================== */
+
+  const BENEFITS = [
+
+    {
+      title: "Más conexiones",
+      description: "Centralizá tus dispositivos desde un único accesorio."
+    },
+
+    {
+      title: "Menos cables sueltos",
+      description: "Una solución compacta para mantener tu espacio más ordenado."
+    },
+
+    {
+      title: "Fácil de usar",
+      description: "Conectá el accesorio y utilizalo según las funciones compatibles."
+    },
+
+    {
+      title: "Ideal para setups",
+      description: "Pensado para notebooks, escritorios y espacios de trabajo."
+    }
+
+  ];
+
+
+  /* =====================================================
+     HELPERS
+  ===================================================== */
+
+  function setText(id, value) {
+
+    const element = document.getElementById(id);
+
+    if (element) {
+      element.textContent = value;
+    }
+
+  }
+
+
+  /* =====================================================
+     CONTENIDO
+  ===================================================== */
+
+  setText(
+    "hero-description",
+    CONFIG.PRODUCT_DESCRIPTION
+  );
+
+  setText(
+    "buy-product-name",
+    CONFIG.PRODUCT_NAME
+  );
+
+  setText(
+    "price",
+    CONFIG.PRODUCT_PRICE
+  );
+
+  setText(
+    "mobile-price",
+    CONFIG.PRODUCT_PRICE
+  );
+
+  setText(
+    "buy-note",
+    CONFIG.SHIPPING_INFORMATION
+  );
+
+  setText(
+    "payment-note",
+    CONFIG.PAYMENT_INFORMATION
+  );
+
+  setText(
+    "faq-shipping-time",
+    CONFIG.SHIPPING_INFORMATION
+  );
+
+  setText(
+    "faq-shipping-zones",
+    CONFIG.SHIPPING_ZONES
+  );
+
+  setText(
+    "faq-payment",
+    CONFIG.PAYMENT_INFORMATION
+  );
+
+  setText(
+    "faq-tracking",
+    CONFIG.TRACKING_INFORMATION
+  );
+
+  setText(
+    "faq-returns",
+    CONFIG.RETURNS_INFORMATION
+  );
+
+  setText(
+    "hero-shipping-note",
+    CONFIG.SHIPPING_INFORMATION
+  );
+
+  setText(
+    "solution-title",
+    `${CONFIG.PRODUCT_NAME}: una solución simple`
+  );
+
+  setText(
+    "buy-title",
+    `Llevate tu ${CONFIG.PRODUCT_NAME}.`
+  );
+
+  setText(
+    "final-title",
+    `Probá ${CONFIG.PRODUCT_NAME}.`
+  );
+
+
+  /* =====================================================
+     PRECIO ANTERIOR
+  ===================================================== */
+
+  const oldPrice = document.getElementById("old-price");
+
+  if (CONFIG.PRODUCT_OLD_PRICE) {
+
+    oldPrice.textContent = CONFIG.PRODUCT_OLD_PRICE;
+
+  } else {
+
+    oldPrice.style.display = "none";
+
+  }
+
+
+  /* =====================================================
+     IMAGEN DEL PRODUCTO
+  ===================================================== */
+
+  function renderProductImage() {
+
+    const container =
+      document.getElementById("hero-product");
+
+    if (!container) return;
+
+    if (CONFIG.PRODUCT_IMAGE) {
+
+      container.innerHTML = `
+        <img
+          src="${CONFIG.PRODUCT_IMAGE}"
+          alt="${CONFIG.PRODUCT_NAME}"
+          loading="eager"
+        >
+        <div class="product-label">
+          ${CONFIG.PRODUCT_NAME}
+        </div>
+      `;
+
+    }
+
+  }
+
+  renderProductImage();
+
+
+  /* =====================================================
+     VIDEO / DEMO
+  ===================================================== */
+
+  function renderDemo() {
+
+    const demo =
+      document.getElementById("product-demo");
+
+    if (!demo) return;
+
+    if (CONFIG.PRODUCT_VIDEO) {
+
+      demo.innerHTML = `
+        <video
+          src="${CONFIG.PRODUCT_VIDEO}"
+          controls
+          playsinline
+          preload="metadata"
+        ></video>
+      `;
+
+      return;
+
+    }
+
+    if (CONFIG.PRODUCT_IMAGE) {
+
+      demo.innerHTML = `
+        <img
+          src="${CONFIG.PRODUCT_IMAGE}"
+          alt="Demostración de ${CONFIG.PRODUCT_NAME}"
+          loading="lazy"
+        >
+      `;
+
+    }
+
+  }
+
+  renderDemo();
+
+
+  /* =====================================================
+     BENEFICIOS
+  ===================================================== */
+
+  const benefitsContainer =
+    document.getElementById("benefits");
+
+  benefitsContainer.innerHTML =
+    BENEFITS.map(item => `
+
+      <div class="benefit">
+
+        <div class="check">
+          ✓
+        </div>
+
+        <div>
+
+          <strong>
+            ${item.title}
+          </strong>
+
+          <span>
+            ${item.description}
+          </span>
+
+        </div>
+
+      </div>
+
+    `).join("");
+
+
+  /* =====================================================
+     BOTONES DE COMPRA
+  ===================================================== */
+
+  const purchaseButtons = [
+
+    document.getElementById("buy-button"),
+
+    document.getElementById("mobile-buy-button")
+
+  ];
+
+  purchaseButtons.forEach(button => {
+
+    if (!button) return;
+
+    button.href = CONFIG.PRODUCT_URL;
+
+  });
+
+
+  /* =====================================================
+     WHATSAPP
+  ===================================================== */
+
+  const whatsapp =
+    document.getElementById("footer-whatsapp");
+
+  if (whatsapp) {
+
+    whatsapp.href = CONFIG.WHATSAPP_URL;
+
+    whatsapp.target = "_blank";
+    whatsapp.rel = "noopener noreferrer";
+
+  }
+
+
+  /* =====================================================
+     ANALYTICS LOCAL
+     Útil para pruebas sin pagar herramientas.
+  ===================================================== */
+
+  function track(eventName) {
+
+    try {
+
+      const key =
+        `kernix_${eventName}`;
+
+      const current =
+        Number(localStorage.getItem(key) || 0);
+
+      localStorage.setItem(
+        key,
+        String(current + 1)
+      );
+
+    } catch (error) {
+
+      // Storage no disponible.
+
+    }
+
+  }
+
+
+  track("page_view");
+
+
+  document
+    .querySelectorAll(".btn")
+    .forEach(button => {
+
+      button.addEventListener(
+        "click",
+        () => track("cta_click")
+      );
+
+    });
+
+
+  let bottomTracked = false;
+
+  window.addEventListener(
+    "scroll",
+    () => {
+
+      if (bottomTracked) return;
+
+      const reachedBottom =
+        window.scrollY +
+        window.innerHeight >=
+        document.documentElement.scrollHeight - 100;
+
+      if (reachedBottom) {
+
+        bottomTracked = true;
+
+        track("scroll_bottom");
+
+      }
+
+    },
+    {
+      passive: true
+    }
+  );
+
+</script>
+
+</body>
+</html>
